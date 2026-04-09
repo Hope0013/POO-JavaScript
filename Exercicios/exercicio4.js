@@ -5,7 +5,6 @@ class Funcionario {
     this.salario = salario;
   }
 
-  //métodos para manipular o salário
   aumentarSalario(porcentagem) {
     if (porcentagem <= 0) {
       console.log("Porcentagem Inválida!");
@@ -16,13 +15,13 @@ class Funcionario {
 
   exibirInfo() {
     console.log(
-      `Nome: ${this.nome}, Cargo: ${this.cargo}, Salário: R$${this.salario}`,
+      `Nome: ${this.nome}\nCargo: ${this.cargo}\nSalário: R$${this.salario}`,
     );
   }
 }
 
-let funcionario1 = new Funcionario("João", "Gerente", 5000);
+let funcionario1 = new Funcionario("Ana", "Vendedora", 3500);
 
 funcionario1.exibirInfo();
-funcionario1.aumentarSalario(10);
+funcionario1.aumentarSalario(20);
 funcionario1.exibirInfo();
